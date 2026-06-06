@@ -1,9 +1,11 @@
+import { Toaster } from '@/components/ui/sonner';
 import { CoffeePlatform } from "./componente/CoffeePlatform";
 
 export function App() {
-  return(
+  return (
     <div>
-      <CoffeePlatform/>
+      <CoffeePlatform />
+      <Toaster position="bottom-right" richColors />
     </div>
-  )
+  );
 }
