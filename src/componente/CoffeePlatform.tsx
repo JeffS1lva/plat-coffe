@@ -156,11 +156,6 @@ export function CoffeePlatform() {
     });
   };
 
-  const removeFromCart = (id: number) => {
-    const item = cart.find(i => i.id === id);
-    setCart(prev => prev.filter(i => i.id !== id));
-    if (item) toast.error(`${item.name} removido do carrinho`);
-  };
 
   const updateQuantity = (id: number, delta: number) => {
     setCart(prev =>
